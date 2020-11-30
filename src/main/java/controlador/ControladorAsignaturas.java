@@ -48,8 +48,8 @@ public class ControladorAsignaturas implements Serializable{
         
         for (int i = 0; i < this.getArray_asignatuas().size(); i++) {
 
-            contenido_tabla[i][0] = String.valueOf(this.getAsignaturaArrayAsignaturas(i).getCod_asig());
-            contenido_tabla[i][1] = String.valueOf(this.getAsignaturaArrayAsignaturas(i).getConvocatoria());
+            contenido_tabla[i][0] = String.valueOf(this.getAsignaturaArrayAsignaturas(i).getNombre());
+            contenido_tabla[i][1] = String.valueOf(this.getAsignaturaArrayAsignaturas(i).getTipo());
         }
         
         return contenido_tabla;

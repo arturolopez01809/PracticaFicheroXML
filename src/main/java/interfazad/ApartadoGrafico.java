@@ -111,6 +111,15 @@ public class ApartadoGrafico extends javax.swing.JFrame {
         activarDesactivarEdicionBotones(false);
         activarDesactivarEdicionBotonesProfesores(false);
         activarDesactivarEdicionBotonesAsignaturas(false);
+        
+        labelCod_colegio.setVisible(false);
+        textFieldCod_colegio.setVisible(false);
+        
+        labelCod_colegio2.setVisible(false);
+        textFieldCod_prof.setVisible(false);
+        
+        labelNombre1.setVisible(false);
+        textFieldCod_asig.setVisible(false);
     }
 
     public void activarDesactivarEdicionBotones(Boolean activar) {
@@ -813,6 +822,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
 
             this.activarDesactivarEdicionBotones(false);
         }
+        
+        labelCod_colegio.setVisible(false);
+        textFieldCod_colegio.setVisible(false);
 
         jComboBox2.removeAllItems();
 
@@ -920,6 +932,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
     private void buttonIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIngresarActionPerformed
 
         this.activarDesactivarEdicionBotones(true);
+        
+        labelCod_colegio.setVisible(true);
+        textFieldCod_colegio.setVisible(true);
 
         this.setActivar_ingresar(true);
     }//GEN-LAST:event_buttonIngresarActionPerformed
@@ -946,6 +961,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         this.activarDesactivarEdicionBotones(false);
+        
+        labelCod_colegio.setVisible(false);
+        textFieldCod_colegio.setVisible(false);
 
         this.borrarTextFieldColegio();
 
@@ -1043,6 +1061,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
 
             this.activarDesactivarEdicionBotonesAsignaturas(false);
         }
+        
+        labelNombre1.setVisible(false);
+        textFieldCod_asig.setVisible(false);
 
     }//GEN-LAST:event_buttonAceptarAsignaturaActionPerformed
 
@@ -1054,6 +1075,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         this.activarDesactivarEdicionBotonesAsignaturas(false);
+        
+        labelNombre1.setVisible(false);
+        textFieldCod_asig.setVisible(false);
 
         this.borrarTextFieldAsignaturas();
 
@@ -1078,6 +1102,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         this.activarDesactivarEdicionBotonesAsignaturas(true);
+        
+        labelNombre1.setVisible(true);
+        textFieldCod_asig.setVisible(true);
 
         this.setActivar_ingresar_asignaturas(true);
 
@@ -1190,6 +1217,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
 
             this.activarDesactivarEdicionBotonesProfesores(false);
         }
+        
+        labelCod_colegio2.setVisible(false);
+        textFieldCod_prof.setVisible(false);
 
         jComboBoxAsignaturas.removeAllItems();
 
@@ -1205,6 +1235,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         this.activarDesactivarEdicionBotonesProfesores(false);
+        
+        labelCod_colegio2.setVisible(false);
+        textFieldCod_prof.setVisible(false);
 
         this.borrarTextFieldProfesores();
 
@@ -1229,6 +1262,9 @@ public class ApartadoGrafico extends javax.swing.JFrame {
     private void buttonIngresarProfesoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIngresarProfesoresActionPerformed
         // TODO add your handling code here:
         this.setActivar_ingresar_profesores(true);
+        
+        labelCod_colegio2.setVisible(true);
+        textFieldCod_prof.setVisible(true);
 
         this.activarDesactivarEdicionBotonesProfesores(true);
     }//GEN-LAST:event_buttonIngresarProfesoresActionPerformed
@@ -1251,7 +1287,7 @@ public class ApartadoGrafico extends javax.swing.JFrame {
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
                 contenido_tabla,
                 new String[]{
-                    "Cod_colegios", "Nombre"
+                    "Nombre", "Dirección"
                 }
         ));
     }
@@ -1261,7 +1297,7 @@ public class ApartadoGrafico extends javax.swing.JFrame {
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
                 contenido_tabla,
                 new String[]{
-                    "Cod_prof", "Nombre"
+                    "Nombre", "Estudios"
                 }
         ));
     }
@@ -1271,7 +1307,7 @@ public class ApartadoGrafico extends javax.swing.JFrame {
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
                 contenido_tabla,
                 new String[]{
-                    "Cod_asig", "Convocatoria"
+                    "Nombre Asignatura", "Tipo"
                 }
         ));
     }

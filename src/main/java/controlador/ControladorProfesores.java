@@ -52,15 +52,11 @@ public class ControladorProfesores implements Serializable {
     
     public String[][] introducirProfesorEnMatriz(){
         
-        String contenido_tabla[][] = new String[this.getArray_profesores().size()][5];
+        String contenido_tabla[][] = new String[this.getArray_profesores().size()][2];
         
         for (int i = 0; i < this.getArray_profesores().size(); i++) {
-
-            contenido_tabla[i][0] = String.valueOf(this.getProfesoresDeArray(i).getCod_prof());
-            contenido_tabla[i][1] = String.valueOf(this.getProfesoresDeArray(i).getNombre());
-            contenido_tabla[i][2] = String.valueOf(this.getProfesoresDeArray(i).getEstudios());
-            contenido_tabla[i][3] = String.valueOf(this.getProfesoresDeArray(i).getRangos());
-            contenido_tabla[i][4] = String.valueOf(this.getProfesoresDeArray(i).getGenero());
+            contenido_tabla[i][0] = String.valueOf(this.getProfesoresDeArray(i).getNombre());
+            contenido_tabla[i][1] = String.valueOf(this.getProfesoresDeArray(i).getEstudios());
         }
         
         return contenido_tabla;
